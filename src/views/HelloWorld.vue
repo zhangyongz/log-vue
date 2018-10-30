@@ -1,12 +1,11 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <hello-j></hello-j>
+  <div class="hello_world_box">
+    <cell></cell>
   </div>
 </template>
 
 <script>
-import { HelloJ } from 'log-vue'
+import Cell from '@/components/cell'
 export default {
   name: 'HelloWorld',
   data () {
@@ -15,10 +14,12 @@ export default {
     }
   },
   components: {
-    HelloJ
+    Cell
   }
 }
 </script>
 
-<style>
+<style lang="less">
+.hello_world_box {
+}
 </style>
