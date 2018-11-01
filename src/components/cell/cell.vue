@@ -1,5 +1,5 @@
 <template>
-  <div class="cell_box" :class="{intent: borderIntent}" @click="goLink">
+  <div class="cell_box" :class="{intent: !borderIntent}" @click="goLink">
     <p class="item_title" :style="'width:' + labelWidth">{{ title }}</p>
     <div class="item_right">
       <p class="item_value" :style="'text-align:' + valueAlign">{{ value }}</p>
@@ -65,6 +65,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   .item_right {
+    margin-left: 10px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -85,9 +86,12 @@ export default {
       display: none;
     }
   }
+  &::after {
+    left: 15px;
+  }
   &.intent {
-    &:after {
-      left: 15px;
+    &::after {
+      left: 0px;
     }
   }
 }

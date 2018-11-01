@@ -1,7 +1,9 @@
 <template>
   <div class="group_box">
-    <p class="group_title">{{ title }}</p>
-    <slot></slot>
+    <p class="group_title" v-if="title">{{ title }}</p>
+    <div class="group_content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -32,6 +34,8 @@ export default {
     font-size: 14px;
     color: #999999;
   }
-  .log_1px_tb;
+  .group_content {
+    .log_1px_tb;
+  }
 }
 </style>
