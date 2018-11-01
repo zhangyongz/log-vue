@@ -1,3 +1,5 @@
 {
-  "hello": "src/components/hello"
+  "hello": "src/components/hello",
+  "group": "src/components/group",
+  "cell": "src/components/cell"
 }

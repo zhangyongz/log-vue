@@ -1,4 +1,4 @@
-.setTopLine(@c: #C7C7C7) {
+.setTopLine(@c) {
   content: " ";
   position: absolute;
   left: 0;
@@ -11,7 +11,7 @@
   transform: scaleY(0.5);
 }
 
-.setBottomLine(@c: #C7C7C7) {
+.setBottomLine(@c) {
   content: " ";
   position: absolute;
   left: 0;
@@ -24,7 +24,7 @@
   transform: scaleY(0.5);
 }
 
-.setLeftLine(@c: #C7C7C7) {
+.setLeftLine(@c) {
   content: " ";
   position: absolute;
   left: 0;
@@ -37,7 +37,7 @@
   transform: scaleX(0.5);
 }
 
-.setRightLine(@c: #C7C7C7) {
+.setRightLine(@c) {
   content: " ";
   position: absolute;
   right: 0;
@@ -50,7 +50,7 @@
   transform: scaleX(0.5);
 }
 
-.setLine(@c: #C7C7C7) {
+.setLine(@c) {
   content: " ";
   position: absolute;
   left: 0;
@@ -63,28 +63,28 @@
   transform: scale(0.5);
 }
 
-.log_1px(@c) {
+.log_1px(@c: #d9d9d9) {
   position: relative;
   &:before {
     .setLine(@c);
   }
 }
 
-.log_1px_t(@c) {
+.log_1px_t(@c: #d9d9d9) {
   position: relative;
   &:before {
     .setTopLine(@c);
   }
 }
 
-.log_1px_b(@c) {
+.log_1px_b(@c: #d9d9d9) {
   position: relative;
   &:after {
     .setBottomLine(@c);
   }
 }
 
-.log_1px_tb(@c) {
+.log_1px_tb(@c: #d9d9d9) {
   position: relative;
   &:before {
     .setTopLine(@c);
@@ -94,14 +94,14 @@
   }
 }
 
-.log_1px_l(@c) {
+.log_1px_l(@c: #d9d9d9) {
   position: relative;
   &:before {
     .setLeftLine(@c);
   }
 }
 
-.log_1px_r(@c) {
+.log_1px_r(@c: #d9d9d9) {
   position: relative;
   &:after {
     .setRightLine(@c);

@@ -1,7 +1,11 @@
 import HelloJ from './components/hello-j'
+import Group from './components/group'
+import Cell from './components/cell'
 
 const components = {
-  HelloJ
+  HelloJ,
+  Group,
+  Cell
 }
 
 const install = function (Vue, opts = {}) {
