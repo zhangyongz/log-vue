@@ -4,6 +4,7 @@ import store from '../store'
 import DemoList from '@/views/demo_list'
 import GroupDemo from '@/views/group_demo'
 import CellDemo from '@/views/cell_demo'
+import VDialogDemo from '@/views/v_dialog_demo'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ const router = new Router({
       path: '/cell_demo',
       name: 'cell_demo',
       component: CellDemo
+    },
+    {
+      path: '/v_dialog_demo',
+      name: 'v_dialog_demo',
+      component: VDialogDemo
     }
   ]
 })
@@ -34,13 +40,8 @@ history.setItem('/', '0')
 function setDirection (to, from, next) {
   window.scrollTo(0, 0)
   let historyCount = history.getItem('count') * 1 || 0
-  console.log(from.path)
   const toIndex = history.getItem(to.path)
   const fromIndex = history.getItem(from.path)
-  // console.log(toIndex === '0' && fromIndex === '0')
-  // console.log(Boolean(toIndex))
-  // console.log(toIndex)
-  // console.log(fromIndex)
   if (toIndex) { // 进入的路由存在索引
     if (toIndex === '0' && fromIndex === '0') { // 第一次进入根路由
       store.commit('user/updateDirection', '')

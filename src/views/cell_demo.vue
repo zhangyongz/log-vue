@@ -1,5 +1,6 @@
 <template>
   <div class="cell_demo_box">
+    <v-header title="cell"></v-header>
     <group>
       <cell title="title" value="value"></cell>
     </group>
@@ -25,5 +26,6 @@ export default {
 
 <style lang="less">
 .cell_demo_box {
+  padding-top: 45px;
 }
 </style>

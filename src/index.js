@@ -1,11 +1,17 @@
 import HelloJ from './components/hello-j'
 import Group from './components/group'
 import Cell from './components/cell'
+import VHeader from './components/v-header'
+import Alert from './components/alert'
+import VDialog from './components/v-dialog'
 
 const components = {
   HelloJ,
   Group,
-  Cell
+  Cell,
+  VHeader,
+  Alert,
+  VDialog
 }
 
 const install = function (Vue, opts = {}) {

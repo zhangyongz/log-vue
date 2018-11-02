@@ -23,10 +23,16 @@ export default {
   margin: 0;
   padding: 0;
 }
+
 body {
   color: #333333;
   background-color: #f5f5f5;
 }
+
+#app {
+  min-height: 100vh;
+}
+
 .route-reverse-enter-active,
 .route-reverse-leave-active,
 .route-forward-enter-active,

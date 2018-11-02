@@ -1,0 +1,43 @@
+.log-fade-enter-active,
+.log-fade-leave-active {
+  opacity: 1;
+  transition: opacity linear 0.2s;
+}
+.log-fade-enter,
+.log-fade-leave-to {
+  opacity: 0;
+}
+.log-dialog-enter-active {
+  animation: log-dialog-in 0.5s;
+}
+.log-dialog-leave-active {
+  animation: log-dialog-out 0.3s;
+}
+@keyframes log-dialog-in {
+  0% {
+    transform: scale(1.185);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes log-dialog-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+}
+.log-mask-enter,
+.log-mask-leave-active {
+  opacity: 0;
+}
+.log-mask-leave-active,
+.log-mask-enter-active {
+  transition: opacity 300ms;
+}
