@@ -1,5 +1,10 @@
 {
   "hello": "src/components/hello",
   "group": "src/components/group",
-  "cell": "src/components/cell"
+  "cell": "src/components/cell",
+  "v-dialog": "src/components/v-dialog",
+  "alert": "src/components/alert",
+  "alertPlugin": "src/components/alertPlugin",
+  "confirm": "src/components/confirm",
+  "confirmPlugin": "src/components/confirmPlugin"
 }

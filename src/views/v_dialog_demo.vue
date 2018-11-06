@@ -4,7 +4,7 @@
 
     <p class="switch_btn" @click="switchDialog">{{ switchText }}</p>
 
-    <v-dialog v-model="show">
+    <v-dialog v-model="show" @on-show="onShow" @on-hide="onHide">
       <div class="content">
         <img src="../assets/img/picture.jpg">
         <div class="icon_wrapper" @click="show=false">
@@ -36,6 +36,12 @@ export default {
   methods: {
     switchDialog () {
       this.show = !this.show
+    },
+    onShow () {
+      console.log('show')
+    },
+    onHide () {
+      console.log('hide')
     }
   }
 }
@@ -45,6 +51,7 @@ export default {
 @import url("../styles/index.less");
 .dialog_demo_box {
   padding-top: 45px;
+  overflow: hidden;
   .switch_btn {
     width: 300px;
     height: 40px;

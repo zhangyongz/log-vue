@@ -1,5 +1,5 @@
 <template>
-  <div class="v_dialog_box">
+  <div class="log_dialog">
     <transition name="log-mask">
       <div class="mask" v-show="show" @click="hide"></div>
     </transition>
@@ -44,7 +44,7 @@ export default {
 
 <style lang="less">
 @import url("../../styles/transition.less");
-.v_dialog_box {
+.log_dialog {
   .mask {
     width: 100%;
     height: 100%;

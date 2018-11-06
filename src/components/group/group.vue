@@ -1,5 +1,5 @@
 <template>
-  <div class="group_box">
+  <div class="log_group">
     <p class="group_title" v-if="title">{{ title }}</p>
     <div class="group_content">
       <slot></slot>
@@ -27,7 +27,7 @@ export default {
 
 <style lang="less">
 @import url("../../styles/index.less");
-.group_box {
+.log_group {
   margin-bottom: 10px;
   .group_title {
     padding: 10px 15px 5px;

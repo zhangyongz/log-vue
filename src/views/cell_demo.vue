@@ -27,5 +27,6 @@ export default {
 <style lang="less">
 .cell_demo_box {
   padding-top: 45px;
+  overflow: hidden;
 }
 </style>

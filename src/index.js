@@ -1,17 +1,24 @@
-import HelloJ from './components/hello-j'
 import Group from './components/group'
 import Cell from './components/cell'
 import VHeader from './components/v-header'
-import Alert from './components/alert'
 import VDialog from './components/v-dialog'
+import Alert from './components/alert'
+import AlertPlugin from './components/alertPlugin'
+import Confirm from './components/confirm'
+import ConfirmPlugin from './components/confirmPlugin'
 
 const components = {
-  HelloJ,
   Group,
   Cell,
   VHeader,
   Alert,
-  VDialog
+  VDialog,
+  Confirm
+}
+
+const plugins = {
+  AlertPlugin,
+  ConfirmPlugin
 }
 
 const install = function (Vue, opts = {}) {
@@ -20,6 +27,10 @@ const install = function (Vue, opts = {}) {
 
   Object.keys(components).forEach(key => {
     Vue.component(key, components[key])
+  })
+
+  Object.keys(plugins).forEach(key => {
+    Vue.use(plugins[key])
   })
 }
 

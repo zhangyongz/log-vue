@@ -6,6 +6,8 @@
       <cell title="group" is-link link="group_demo"></cell>
       <cell title="cell" is-link link="cell_demo"></cell>
       <cell title="v_dialog" is-link link="v_dialog_demo"></cell>
+      <cell title="alert" is-link link="alert_demo"></cell>
+      <cell title="confirm" is-link link="confirm_demo"></cell>
     </group>
   </div>
 </template>
@@ -24,5 +26,6 @@ export default {
 <style lang="less">
 .demo_list_box {
   padding-top: 45px;
+  overflow: hidden;
 }
 </style>

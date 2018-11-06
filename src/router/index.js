@@ -5,6 +5,8 @@ import DemoList from '@/views/demo_list'
 import GroupDemo from '@/views/group_demo'
 import CellDemo from '@/views/cell_demo'
 import VDialogDemo from '@/views/v_dialog_demo'
+import AlertDemo from '@/views/alert_demo'
+import ConfirmDemo from '@/views/confirm_demo'
 
 Vue.use(Router)
 
@@ -29,6 +31,16 @@ const router = new Router({
       path: '/v_dialog_demo',
       name: 'v_dialog_demo',
       component: VDialogDemo
+    },
+    {
+      path: '/alert_demo',
+      name: 'alert_demo',
+      component: AlertDemo
+    },
+    {
+      path: '/confirm_demo',
+      name: 'confirm_demo',
+      component: ConfirmDemo
     }
   ]
 })

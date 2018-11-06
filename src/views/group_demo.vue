@@ -30,5 +30,6 @@ export default {
 <style lang="less">
 .group_demo_box {
   padding-top: 45px;
+  overflow: hidden;
 }
 </style>

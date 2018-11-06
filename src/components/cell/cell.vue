@@ -1,5 +1,5 @@
 <template>
-  <div class="cell_box" :class="{intent: !borderIntent}" @click="goLink">
+  <div class="log_cell" :class="{intent: !borderIntent}" @click="goLink">
     <p class="item_title" :style="'width:' + labelWidth">{{ title }}</p>
     <div class="item_right">
       <p class="item_value" :style="'text-align:' + valueAlign">{{ value }}</p>
@@ -57,7 +57,7 @@ export default {
 <style lang="less">
 @import url("../../styles/index.less");
 @import url("../../assets/fonts/iconfont.css");
-.cell_box {
+.log_cell {
   padding: 12px 15px;
   font-size: 14px;
   background-color: #ffffff;

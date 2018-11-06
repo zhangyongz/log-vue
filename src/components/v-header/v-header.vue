@@ -1,5 +1,5 @@
 <template>
-  <header class="v_header_box">
+  <header class="log_header">
     <div class="back" @click="back">
       <i class="iconfont icon-fanhui"></i>
     </div>
@@ -30,7 +30,7 @@ export default {
 
 <style lang="less">
 @import url("../../styles/index.less");
-.v_header_box {
+.log_header {
   width: 100%;
   position: fixed;
   top: 0;
