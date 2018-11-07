@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'group',
+  name: 'log_group',
   data () {
     return {
     }

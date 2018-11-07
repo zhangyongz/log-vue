@@ -6,6 +6,7 @@ import Alert from './components/alert'
 import AlertPlugin from './components/alertPlugin'
 import Confirm from './components/confirm'
 import ConfirmPlugin from './components/confirmPlugin'
+import Loading from './components/loading'
 
 const components = {
   Group,
@@ -13,7 +14,8 @@ const components = {
   VHeader,
   Alert,
   VDialog,
-  Confirm
+  Confirm,
+  Loading
 }
 
 const plugins = {

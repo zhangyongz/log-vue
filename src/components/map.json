@@ -6,5 +6,6 @@
   "alert": "src/components/alert",
   "alertPlugin": "src/components/alertPlugin",
   "confirm": "src/components/confirm",
-  "confirmPlugin": "src/components/confirmPlugin"
+  "confirmPlugin": "src/components/confirmPlugin",
+  "loading": "src/components/loading"
 }

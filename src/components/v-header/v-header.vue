@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'v-header',
+  name: 'log_header',
   data () {
     return {
     }

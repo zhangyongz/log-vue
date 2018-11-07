@@ -23,7 +23,7 @@
 <script>
 import VDialog from '@/components/v-dialog'
 export default {
-  name: 'confirm',
+  name: 'log_confirm',
   data () {
     return {
       show: false,

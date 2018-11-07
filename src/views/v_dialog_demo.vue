@@ -1,5 +1,5 @@
 <template>
-  <div class="dialog_demo_box">
+  <div class="dialog_demo">
     <v-header title="v_dialog"></v-header>
 
     <p class="switch_btn" @click="switchDialog">{{ switchText }}</p>
@@ -49,7 +49,7 @@ export default {
 
 <style lang="less">
 @import url("../styles/index.less");
-.dialog_demo_box {
+.dialog_demo {
   padding-top: 45px;
   overflow: hidden;
   .switch_btn {

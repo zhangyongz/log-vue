@@ -1,5 +1,5 @@
 <template>
-  <div class="alert_demo_box">
+  <div class="alert_demo">
     <v-header title="alert"></v-header>
 
     <p class="switch_btn" @click="switchAlert">显示</p>
@@ -41,7 +41,7 @@ export default {
 
 <style lang="less">
 @import url("../styles/index.less");
-.alert_demo_box {
+.alert_demo {
   padding-top: 45px;
   overflow: hidden;
   .switch_btn {

@@ -1,5 +1,5 @@
 <template>
-  <div class="demo_list_box">
+  <div class="demo_list">
     <v-header title="demo list"></v-header>
 
     <group labelWidth="80px">
@@ -8,13 +8,14 @@
       <cell title="v_dialog" is-link link="v_dialog_demo"></cell>
       <cell title="alert" is-link link="alert_demo"></cell>
       <cell title="confirm" is-link link="confirm_demo"></cell>
+      <cell title="loading" is-link link="loading_demo"></cell>
     </group>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'demo_list_box',
+  name: 'demo_list',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -24,7 +25,7 @@ export default {
 </script>
 
 <style lang="less">
-.demo_list_box {
+.demo_list {
   padding-top: 45px;
   overflow: hidden;
 }

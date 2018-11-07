@@ -12,7 +12,7 @@
 import { go } from '../../libs/router'
 import getParentProp from '../../libs/get-parent-prop'
 export default {
-  name: 'cell',
+  name: 'log_cell',
   data () {
     return {
     }

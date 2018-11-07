@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'v_dialog',
+  name: 'log_dialog',
   model: {
     prop: 'show',
     event: 'change'

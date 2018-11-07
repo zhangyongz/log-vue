@@ -1,5 +1,5 @@
 <template>
-  <div class="group_demo_box">
+  <div class="group_demo">
     <v-header title="group"></v-header>
 
     <group>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="less">
-.group_demo_box {
+.group_demo {
   padding-top: 45px;
   overflow: hidden;
 }

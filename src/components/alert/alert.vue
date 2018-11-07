@@ -18,7 +18,7 @@
 <script>
 import VDialog from '@/components/v-dialog'
 export default {
-  name: 'alert',
+  name: 'log_alert',
   data () {
     return {
       show: false,

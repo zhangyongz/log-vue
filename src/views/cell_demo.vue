@@ -1,5 +1,5 @@
 <template>
-  <div class="cell_demo_box">
+  <div class="cell_demo">
     <v-header title="cell"></v-header>
     <group>
       <cell title="title" value="value"></cell>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="less">
-.cell_demo_box {
+.cell_demo {
   padding-top: 45px;
   overflow: hidden;
 }
