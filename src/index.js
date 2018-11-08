@@ -7,6 +7,9 @@ import AlertPlugin from './components/alertPlugin'
 import Confirm from './components/confirm'
 import ConfirmPlugin from './components/confirmPlugin'
 import Loading from './components/loading'
+import LoadingPlugin from './components/loadingPlugin'
+import Toast from './components/toast'
+import ToastPlugin from './components/toastPlugin'
 
 const components = {
   Group,
@@ -15,12 +18,15 @@ const components = {
   Alert,
   VDialog,
   Confirm,
-  Loading
+  Loading,
+  Toast
 }
 
 const plugins = {
   AlertPlugin,
-  ConfirmPlugin
+  ConfirmPlugin,
+  LoadingPlugin,
+  ToastPlugin
 }
 
 const install = function (Vue, opts = {}) {

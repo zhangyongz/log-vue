@@ -4,7 +4,7 @@
 
     <div class="loading_toast">
       <i class="loading_icon"></i>
-      <p class="toast_content">loading</p>
+      <p class="toast_content">{{text}}</p>
     </div>
   </div>
 </template>

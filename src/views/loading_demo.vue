@@ -4,7 +4,9 @@
 
     <p class="switch_btn" @click="showLoading">显示</p>
 
-    <loading v-model="show"></loading>
+    <p class="switch_btn" @click="showLoading2">插件形式调用</p>
+
+    <loading v-model="show" text="加载中"></loading>
   </div>
 </template>
 
@@ -21,7 +23,15 @@ export default {
       this.show = true
       setTimeout(() => {
         this.show = false
-      }, 3000)
+      }, 1000)
+    },
+    showLoading2 () {
+      this.$log.loading.show({
+        text: '加载中'
+      })
+      setTimeout(() => {
+        this.$log.loading.hide()
+      }, 1000)
     }
   }
 }

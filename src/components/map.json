@@ -7,5 +7,8 @@
   "alertPlugin": "src/components/alertPlugin",
   "confirm": "src/components/confirm",
   "confirmPlugin": "src/components/confirmPlugin",
-  "loading": "src/components/loading"
+  "loading": "src/components/loading",
+  "loadingPlugin": "src/components/loadingPlugin",
+  "toast": "src/components/toast",
+  "toastPlugin": "src/components/toastPlugin"
 }

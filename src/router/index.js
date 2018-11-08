@@ -8,6 +8,7 @@ import VDialogDemo from '@/views/v_dialog_demo'
 import AlertDemo from '@/views/alert_demo'
 import ConfirmDemo from '@/views/confirm_demo'
 import LoadingDemo from '@/views/loading_demo'
+import ToastDemo from '@/views/toast_demo'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ const router = new Router({
       path: '/loading_demo',
       name: 'loading_demo',
       component: LoadingDemo
+    },
+    {
+      path: '/toast_demo',
+      name: 'toast_demo',
+      component: ToastDemo
     }
   ]
 })
