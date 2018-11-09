@@ -1,8 +1,7 @@
 <template>
   <div class="log_toast">
     <transition name="log-fade">
-      <p class="toast_content" v-show="show">
-        {{text}}
+      <p class="toast_content" v-show="show" v-html="text">
       </p>
     </transition>
   </div>
