@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import VDialog from '@/components/v-dialog'
+import VDialog from '../v-dialog'
 export default {
   name: 'log_alert',
   data () {
