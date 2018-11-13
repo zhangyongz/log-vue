@@ -16,8 +16,8 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js --env testing",
     "publish": "node build/build.js --env production",
-    "build-components": "node build/build-components.js",
-    "build-components2": "webpack-dev-server --config build/webpack.comp.conf.js"
+    "build-components": "node build/build-components.js --entry comp",
+    "build-points": "node build/build-components.js --entry point"
   },
   "dependencies": {
     "object-assign": "^4.1.1"

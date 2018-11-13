@@ -75,6 +75,6 @@ module.exports = {
   },
   comp: {
     assetsRoot: path.resolve(__dirname, '../lib'),
-    productionSourceMap: true
+    productionSourceMap: false
   }
 }

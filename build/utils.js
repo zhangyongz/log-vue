@@ -3,7 +3,6 @@ const path = require('path')
 const config = require('../config')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const packageConfig = require('../package.json')
-const maps = require('../src/components/map.json')
 
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
@@ -101,14 +100,3 @@ exports.createNotifierCallback = () => {
     })
   }
 }
-
-// 入口
-function resolveEntry() {
-  let obj = {}
-  for (const dir in maps) {
-    obj[dir] = path.resolve(__dirname, '../', maps[dir])
-  }
-  return obj
-}
-
-exports.resolveEntry = resolveEntry()

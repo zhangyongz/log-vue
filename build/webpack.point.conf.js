@@ -22,7 +22,9 @@ if (files) {
 }
 baseWebpackConfig.entry = {}
 var webpackConfig = merge(baseWebpackConfig, {
-  entry: modules,
+  entry: {
+    main: './src/index.js'
+  },
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.comp.productionSourceMap,
@@ -32,13 +34,13 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.comp.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.comp.assetsRoot,
-    filename: '[name]/index.js',
+    filename: 'log-vue.min.js',
     library: 'log-vue',
     libraryTarget: 'umd'
   },
   plugins: [
     // extract css into its own file
-    new ExtractTextPlugin('[name]/style.css'),
+    new ExtractTextPlugin('log-vue.min.css'),
     new OptimizeCSSPlugin({
       cssProcessorOptions: config.comp.productionSourceMap
         ? { safe: true, map: { inline: false } }

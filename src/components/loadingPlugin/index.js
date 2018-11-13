@@ -53,3 +53,7 @@ const plugin = {
 
 export default plugin
 export const install = plugin.install
+
+if (typeof window !== 'undefined' && window.Vue) {
+  plugin.install(window.Vue)
+}
