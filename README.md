@@ -19,9 +19,8 @@
   {
   // webpack-transform-modules-plugin 依赖 transformModules
   "transformModules": {
-    "cube-ui": {
-      "transform": "log-vue/src/components/${member}",
-      "kebabCase": true
+    "log-vue": {
+      "transform": "log-vue/src/components/${member}"
     }
   }
 }
