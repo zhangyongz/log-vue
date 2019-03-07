@@ -16,7 +16,7 @@
 ```
 
 ``` javascript
-  {
+{
   // webpack-transform-modules-plugin 依赖 transformModules
   "transformModules": {
     "log-vue": {

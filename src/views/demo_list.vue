@@ -10,6 +10,7 @@
       <cell title="confirm" is-link link="confirm_demo"></cell>
       <cell title="loading" is-link link="loading_demo"></cell>
       <cell title="toast" is-link link="toast_demo"></cell>
+      <cell title="cropper" is-link link="cropper_demo"></cell>
     </group>
   </div>
 </template>

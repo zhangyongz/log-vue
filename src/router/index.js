@@ -9,6 +9,7 @@ import AlertDemo from '@/views/alert_demo'
 import ConfirmDemo from '@/views/confirm_demo'
 import LoadingDemo from '@/views/loading_demo'
 import ToastDemo from '@/views/toast_demo'
+import CropperDemo from '@/views/cropper_demo'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ const router = new Router({
       path: '/toast_demo',
       name: 'toast_demo',
       component: ToastDemo
+    },
+    {
+      path: '/cropper_demo',
+      name: 'cropper_demo',
+      component: CropperDemo
     }
   ]
 })

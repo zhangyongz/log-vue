@@ -10,6 +10,8 @@ import Loading from './components/loading'
 import LoadingPlugin from './components/loadingPlugin'
 import Toast from './components/toast'
 import ToastPlugin from './components/toastPlugin'
+import Cropper from './components/cropper'
+import CropperPlugin from './components/cropperPlugin'
 
 const components = {
   Group,
@@ -19,14 +21,16 @@ const components = {
   VDialog,
   Confirm,
   Loading,
-  Toast
+  Toast,
+  Cropper
 }
 
 const plugins = {
   AlertPlugin,
   ConfirmPlugin,
   LoadingPlugin,
-  ToastPlugin
+  ToastPlugin,
+  CropperPlugin
 }
 
 const install = function (Vue, opts = {}) {
