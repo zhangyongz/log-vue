@@ -1,3 +1,5 @@
+import lrz from 'lrz'
+
 /**
  * @description 上传图片点击事件
  * @export
@@ -24,18 +26,29 @@ export function uploadImgAction () {
       //   return false
       // }
       e.target.value = ''
-      var reader = new FileReader()
-      reader.onload = (e) => {
-        let data
-        if (typeof e.target.result === 'object') {
-          // 把Array Buffer转化为blob 如果是base64不需要
-          data = window.URL.createObjectURL(new Blob([e.target.result]))
-        } else {
-          data = e.target.result
+
+      lrz(file, {
+        quality: 0.6
+      }).then(
+        (rst) => {
+          let bundelImg = rst.base64
+          resolve(bundelImg)
         }
-        resolve(data)
-      }
-      reader.readAsDataURL(file)
+      ).catch((err) => {
+        alert(err)
+      })
+      // var reader = new FileReader()
+      // reader.onload = (e) => {
+      //   let data
+      //   if (typeof e.target.result === 'object') {
+      //     // 把Array Buffer转化为blob 如果是base64不需要
+      //     data = window.URL.createObjectURL(new Blob([e.target.result]))
+      //   } else {
+      //     data = e.target.result
+      //   }
+      //   resolve(data)
+      // }
+      // reader.readAsDataURL(file)
     }
   })
 }

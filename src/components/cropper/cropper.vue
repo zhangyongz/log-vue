@@ -8,11 +8,11 @@
     </div>
 
     <div class="wrapper" style="height: calc(100vh - 45px)">
-      <vue-cropper ref="cropper" :img="img" :output-size="outputSize" :output-type="option.outputType" :info="false"
-      :full="option.full" :can-move="canMove" :can-move-box="canMoveBox" :fixed-box="option.fixedBox"
+      <vue-cropper ref="cropper" :img="img" :output-size="option.outputSize" :output-type="option.outputType"
+      :info="false" :full="option.full" :can-move="canMove" :can-move-box="canMoveBox" :fixed-box="fixedBox"
       :original="option.original" :auto-crop="option.autoCrop" :auto-crop-width="autoCropWidth"
-      :auto-crop-height="autoCropHeight" :center-box="option.centerBox" :high="option.high"
-      :fixedNumber="fixedNumber" :fixed="fixed"></vue-cropper>
+      :auto-crop-height="autoCropHeight" :center-box="option.centerBox" :high="option.high" :fixedNumber="fixedNumber"
+      :fixed="fixed" :enlarge="1"></vue-cropper>
     </div>
   </div>
 </template>
@@ -24,9 +24,9 @@ export default {
   data () {
     return {
       option: {
+        outputSize: 1,
         full: false,
-        outputType: 'png',
-        fixedBox: false,
+        outputType: 'jpeg',
         original: false,
         autoCrop: true,
         centerBox: true,
@@ -44,10 +44,6 @@ export default {
       default: false
     },
     img: String, // 裁剪图片的地址 url 地址 || base64 || blob
-    outputSize: { // 裁剪生成图片的质量 0.1 - 1
-      type: Number,
-      default: 1
-    },
     autoCropWidth: { // 默认生成截图框宽度 0~max
       type: Number,
       default: 200
@@ -61,13 +57,17 @@ export default {
       default: false
     },
     fixedNumber: Array, // 截图框的宽高比例 [宽度, 高度]
+    fixedBox: { // 固定截图框大小 不允许改变 true | false
+      type: Boolean,
+      default: true
+    },
     canMove: { // 上传图片是否可以移动 true | false
       type: Boolean,
       default: true
     },
     canMoveBox: { // 截图框能否拖动 true | false
       type: Boolean,
-      default: true
+      default: false
     }
   },
   watch: {

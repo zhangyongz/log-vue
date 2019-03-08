@@ -38,7 +38,9 @@ export default {
           aLink.download = 'demo'
           aLink.href = img
           aLink.click()
-        }
+        },
+        fixedBox: false,
+        canMoveBox: true
       })
     },
     onShow () {
